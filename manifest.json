@@ -1,15 +1,17 @@
 {
-  "name": "Restore Gulf of Mexico",
-  "description": "Updates Google Maps to show the Gulf of Mexico again.",
+  "name": "My Gulf!",
+  "description": "The Gulf of Mexico is mine now!",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {
     "128": "icon.png"
   },
-  "content_scripts": [{
-    "world": "MAIN",
-    "js": ["gulf.js"],
-    "matches": ["https://www.google.com/maps/*"],
-    "run_at": "document_idle"
-  }]
+  "content_scripts": [
+    {
+      "world": "MAIN",
+      "js": ["gulf.js"],
+      "matches": ["https://www.google.com/maps/*"],
+      "run_at": "document_idle"
+    }
+  ]
 }
